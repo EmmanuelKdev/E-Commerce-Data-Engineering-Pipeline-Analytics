@@ -1,0 +1,6 @@
+# SQLAlchemy and psycopg2-binary are pre-installed in Astro Runtime — do NOT add them here.
+# pandas 2.1.x is the last version compatible with SQLAlchemy 1.4 (bundled in Astro Runtime).
+pandas==2.1.4
+
+# Postgres provider for Airflow hooks/operators (optional but useful)
+apache-airflow-providers-postgres

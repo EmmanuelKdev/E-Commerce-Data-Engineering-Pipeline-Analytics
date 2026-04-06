@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  postgres-warehouse:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: warehouse
+      POSTGRES_PASSWORD: warehouse
+      POSTGRES_DB: ecommerce_dw
+    ports:
+      - "5433:5432"
+    volumes:
+      - warehouse-db:/var/lib/postgresql/data
+
+volumes:
+  warehouse-db:
